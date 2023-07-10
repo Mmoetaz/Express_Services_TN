@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--character encoding-->
+	<meta charset="utf-8">
+	<title>Express Services TN</title>
+	<!--icon de la fenetre-->
+	<link rel="icon" href="../photos/Flag_of_Tunisia.png">
+	<!--metadata-->
+	<meta name="description" content="PaimenetTN,Radar,">
+	<meta name="keywords" content="PaimenetTN,Radar,">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS file for layout-->
+	<link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+	<!--Titre de l'app-->
+	<header class="titre">
+		<h1>Express Services TN</h1>
+	</header>
+	<div style="position: -webkit-sticky;position:sticky ;margin-top:-4em;top:2em;margin-left: 85%;font-size: 18px;border:solid 2px lightsalmon;opacity:0.2;">
+		<p style="font-family: initial;color:white;display: flex;justify-content: center;align-items:center;">
+			Be careful on road!<br>We do care about your safety
+		</p>
+	</div>
+	<section class="container">
+		<!--welcome section-->
+		<article class="wlc">
+			<p>Welcome to our services!<br>we are here to facilitate <br>your paiment so connect & start.</p>
+		</article>
+		<form class="myform" name="login" method="post" action="../php/signup.php">
+			<table>
+					<tr>
+						<td><label for="prenom">First Name:</label></td> 
+						<td><input type="text" name="prenom" id="prenom" placeholder="First Name" autofocus required /></td>
+					</tr>
+					<tr>
+						<td><label for="nom">Name:</label></td> 
+						<td><input type="text" name="nom" id="nom" placeholder="Name" required /></td>
+					</tr>
+					<tr>
+						<td><label for="id">Identity:</label></td> 
+						<td><input type="text" name="id" id="id" placeholder="00000000" required /></td>
+					</tr>
+					<tr>
+						<td><label for="email">E-mail:</label></td> 
+						<td><input type="email" name="email" id="email" placeholder="xyz@example.com" required /></td>
+					</tr>
+					<tr>
+						<td><label for="pwd">Password:</label></td> 
+						<td><input type="Password" name="pwd" id="pwd" placeholder="********" required/></td>
+					</tr>
+					<tr>
+						<td><label for="pwd2">Password confirmation:</label></td> 
+						<td><input type="Password" name="pwd2" id="pwd2" placeholder="********" required/></td>
+					</tr>
+					<tr>
+						<td><label for="age">Age:</label></td>
+						<td><input type="number" id="age" name="age" min="18" max="120" required></td>
+					</tr>
+			</table>
+			<div class="radio">
+				<p>Gender:</p>
+				<label for="genderM" class="gnm">Male</label>
+				<input type="radio" name="gender" id="genderM" value="M">
+				<label for="genderF" class="gnf">Female</label>
+				<input type="radio" name="gender" id="genderF" value="F">
+			</div>
+			<div class="button">
+				<button type="submit" name="signbutton" class="but">Sign in</button>
+			</div>
+		</form>
+		<!--Tunisian flag-->
+		<div class="flag">
+			<img title="Tunisian_Flag" src="../photos/Tunisian_flag.jpg" alt="TunisianFlag" width="250" height="150">
+		</div>	
+	</section>
+	<footer>
+		<p><center><span style="color:darksalmon;">&copy;By:Mohamed Moetaz Boughalmi & Ghassen zouaoui</span></center></p>
+	</footer>
+</body>
+</html>

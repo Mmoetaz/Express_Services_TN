@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+html{
+	background-color: #353839;
+	/*background-color:#778899;*/
+}
+/* Define the @keyframes rule */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* Apply the animation to the text */
+h1 {
+	font-size: 2em;
+	color:darksalmon;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 10s steps(200) forwards;
+}
+
+/* Set initial width to 0 and hide the overflow */
+h1::before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 0;
+	height: 100%;
+}
+
+/* Show each letter as it "types" */
+h1::after {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 8px;
+	height: 100%;
+	background-color: black;
+}
+.tab1{
+	color:darksalmon;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.bank{
+	color:darksalmon;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size:1.2em;
+	cursor: pointer;
+
+}
+.edinar{
+	color:darksalmon;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size:1.2em;
+	cursor: pointer;
+}
+.f1{
+	margin-right:40%;
+	margin-left:40%;
+	padding-top:5%;
+	padding-bottom:5% ;
+}
+.logout{
+	padding:1px 6px;
+	border:1px solid white;
+	border-radius: 0px;
+	background-color: #353839;
+	color:white;
+	font-size:1em;
+	position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.logout:hover{
+	cursor: pointer;
+	color:green;
+	font-size:2em;
+	text-decoration-line: green;
+	border:none;
+}
+
+.lg1{
+	color:lightsalmon;
+	font-size:2em;
+	text-shadow: 5px 10px 15px;
+}
+.img{
+	cursor: pointer;
+}
+.f2{
+	margin-right:40%;
+	margin-left:40%;
+	padding-top:5%;
+	padding-bottom:5% ;
+}
+.lg2{
+	color:lightsalmon;
+	font-size:2em;
+	text-shadow: 5px 10px 15px;
+}
+button{
+	margin-top:2em;
+	padding:3%;
+	border:solid 3px lightyellow;
+	background-color: lightcoral;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: revert;
+	font-size:1em;
+	font-weight: 20px;
+}
+.but:hover{
+	border:outset 5px lightpink;
+	box-shadow: 1px 1px 10px lightcoral;
+	font-size:1.3em;
+}
+input{
+	font-size: 1em;
+	border:solid 3px lightsalmon;
+	border-radius: 5px 30px 30px 10px ;
+	box-shadow: 2px 2px 10px lightsalmon;
+	padding:5px;
+	margin:5px;
+}
+table{
+	padding-left:1.5em;
+}
+.style{
+	color:darksalmon;
+	font-size:1.2em;
+}
+footer{
+	margin-top:8em;
+}

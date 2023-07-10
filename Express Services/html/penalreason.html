@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--character encoding-->
+    <meta charset="utf-8">
+    <title>Express Services TN</title>
+    <!--icon de la fenetre-->
+    <link rel="icon" href="../photos/Flag_of_Tunisia.png">
+    <!--metadata-->
+    <meta name="description" content="PaimenetTN,Radar,administrationTN,penalityTN,TN">
+    <meta name="keywords" content="PaimenetTN,Radar,administrationTN,penalityTN,TN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS file for layout-->
+    <link rel="stylesheet" href="../css/paiment.css">
+</head>
+<body>
+    <header class="titre">
+        <h1>Express Services TN</h1>
+        <form name="void" method="post" action="../php/void.php">
+            <button class="logout" type="submit">Log out</button>
+        </form>
+    </header>
+    <a href="../html/main.html" style="color:lightpink;">Previous page</a>
+    <div style="position: -webkit-sticky;position:sticky ;margin-top:-1em;top:2em;margin-left: 85%;font-size: 18px;border:solid 2px lightsalmon;opacity:0.2;">
+        <p style="font-family: initial;color:white;display: flex;justify-content: center;align-items:center;">
+            Be careful on road!<br>We do care about your safety
+        </p>
+    </div>
+    <center>
+        <form name="f1" method="POST" action="../php/penalreason.php">
+            <table style="margin-top:3em;">
+                <tr>
+                    <td>
+                        <lable for="id"><span style="color:lightsalmon;font-size: 1.5em;">Identity:</span></lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>    
+                        <input type="text" name="id" id="id" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit" style="margin-left:1em;">Check my penalties</button></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+    <footer>
+        <p><center><span style="color:darksalmon;">&copy;By:Mohamed Moetaz Boughalmi & Ghassen zouaoui</span></center></p>
+    </footer>
+</body>
+</html>

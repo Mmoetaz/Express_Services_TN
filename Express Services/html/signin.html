@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--character encoding-->
+	<meta charset="utf-8">
+	<title>Express Services TN</title>
+	<!--icon de la fenetre-->
+	<link rel="icon" href="../photos/Flag_of_Tunisia.png">
+	<!--metadata-->
+	<meta name="description" content="PaimenetTN,Radar,administrationTN,penalityTN,TN">
+	<meta name="keywords" content="PaimenetTN,Radar,administrationTN,penalityTN,TN">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS file for layout-->
+	<link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+	<header class="titre">
+		<h1>Express Services TN</h1>
+	</header>
+	<div style="position: -webkit-sticky;position:sticky ;margin-top:-4em;top:2em;margin-left: 85%;font-size: 18px;border:solid 2px lightsalmon;opacity:0.2;">
+		<p style="font-family: initial;color:white;display: flex;justify-content: center;align-items:center;">
+			Be careful on road!<br>We do care about your safety
+		</p>
+	</div>
+	<section class="containerin">
+		<article class="wlc">
+			<p>Welcome to our services!<br>we are here to facilitate <br>your paiment so connect & start.</p>
+		</article>
+		<form class="myform" name="login" method="post" action="../php/signin.php">
+			<table>
+					<tr>
+						<td><label for="email">E-mail:</label></td> 
+						<td><input type="email" name="email" id="email" placeholder="xyz@example.com" autofocus required /></td>
+					</tr>
+					<tr>
+						<td><label for="pwd">Password:</label></td> 
+						<td><input type="Password" name="pwd" id="pwd" placeholder="********" required/></td>
+					</tr>
+			</table>
+			<div class="button">
+				<button type="submit" name="loginbutton" class="but">Log In</button>
+			</div>
+		</form>
+		<!--Tunisian flag-->
+		<div class="flag">
+			<img title="Tunisian_Flag" src="../photos/Tunisian_flag.jpg" alt="TunisiaFlag" width="250" height="150">
+		</div>	
+	</section>
+	<!--Sign UP-->
+	<section>
+		<center>
+			<p>
+				<span style="color:hotpink;">You don't have an account? <br>Hurry up! </span>
+				<strong><a href="signup.html">Sign up</a></strong>
+			</p>
+		</center>
+	</section>
+	<footer>
+		<p><center><span style="color:darksalmon;">&copy;By:Mohamed Moetaz Boughalmi & Ghassen zouaoui</span></center></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--character encoding-->
+	<meta charset="utf-8">
+	<title>Administration TN</title>
+	<!--icon de la fenetre-->
+	<link rel="icon" href="../photos/Flag_of_Tunisia.png">
+	<!--metadata-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--CSS file for layout-->
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+	<!--Titre de l'app-->
+	<header class="titre">
+		<h1>Tax Administration TN</h1>
+	</header>
+	<section>
+		<h3>Here, you can create a new administrative member!</h3>
+		<h4>Together for a<strong>&nbsp;BETTER TUNISIA</strong></h4>
+		<center>
+			<img src="../photos/Flag_of_Tunisia.png"  heigth="80" width="50">
+		</center>
+		<!--Tunisian emblem-->
+		<div class="chiaar">
+			<img title="Tunisian_Flag" src="../photos/chiaardawla.png" alt="state emblem" width="180" height="280">
+		</div>
+	</section>
+	<div style="position: -webkit-sticky;position:sticky;margin-top:-4em;top:2em;margin-left: 85%;font-size: 18px;border:solid 2px lightsalmon;">
+		<h3 style="color:red;font-family: initial;margin-top:0;">Attention:</h3>
+		<p style="font-family: initial;color:white;display: flex;justify-content: center;align-items:center;">
+			This is a sensitive space, Strict legal action will be taken for any hacking attempt!
+		</p>
+	</div>
+	<section class="sec">
+		<form class="myform" name="login" method="post" action="../php/app.php">
+			<h2>New ADMIN</h2>
+			<table>
+				<tr>
+					<td><label for="id">Identity:</label></td> 
+					<td><input type="text" name="id" id="id" placeholder="00000000" required autofocus /></td>
+				</tr>
+				<tr>
+					<td><label for="prenom">First Name:</label></td> 
+					<td><input type="text" name="prenom" id="prenom" placeholder="First Name" required /></td>
+				</tr>
+				<tr>
+					<td><label for="nom">Name:</label></td> 
+					<td><input type="text" name="nom" id="nom" placeholder="Name" required /></td>
+				</tr>
+				<tr>
+					<td><label for="email">E-mail:</label></td> 
+					<td><input type="email" name="email" id="email" placeholder="xyz@example.com" required /></td>
+				</tr>
+			</table>
+			<div class="radio">
+				<p>Gender:</p>
+				<label for="genderM" class="gnm">Male</label>
+				<input type="radio" name="gender" id="genderM" value="M">
+				<label for="genderF" class="gnf">Female</label>
+				<input type="radio" name="gender" id="genderF" value="F">
+			</div>
+			<div class="button">
+				<button type="submit" name="signbutton" class="but">Sign in</button>
+			</div>
+		</form>	
+	</section>
+	<footer>
+		<p><center><span style="color:darksalmon;">&copy;By:Mohamed Moetaz Boughalmi & Ghassen zouaoui</span></center></p>
+	</footer>
+</body>
+</html>

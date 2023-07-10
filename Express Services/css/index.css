@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+html{
+	background-color: #353839;
+	/*background-color:#778899;*/
+}
+/* Define the @keyframes rule */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* Apply the animation to the text */
+h1 {
+	font-size: 3em;
+	color:darksalmon;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 10s steps(200) forwards;
+}
+
+/* Set initial width to 0 and hide the overflow */
+h1::before {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 0;
+	height: 100%;
+}
+
+/* Show each letter as it "types" */
+h1::after {
+	content: "";
+	display: inline-block;
+	vertical-align: bottom;
+	width: 8px;
+	height: 100%;
+	background-color: black;
+}
+
+.container{
+	margin-top:8em;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.but1{
+	margin-right:5em;
+}
+.but2{
+	margin-left:5em;
+}
+button{
+	background-color:#353839 ;
+	cursor: pointer;
+	font-size:1.8em;
+	transition-duration: 0.5s;
+	transition-delay: 0.3s;
+}
+button:hover{
+	border:outset 10px darksalmon;
+}
+.logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color:white;
+    border:1px solid white;
+    cursor: pointer;
+}
+.logout:hover{
+	cursor: pointer;
+	color:green;
+	font-size:2em;
+	text-decoration-line: green;
+	border:none;
+}
+.image{
+	object-fit: contain;
+	mix-blend-mode: color-burn;
+}
+.image{
+	opacity:1;
+}
+.main{
+	margin-top:2em;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.butmain2{
+	margin-left:2em;
+	margin-right:2em;
+}
+
+footer{
+	margin-top:10em;
+
+}
