@@ -11,8 +11,19 @@ I created a web application for online road tax payment using web development ba
 
 
 *Admin space is made with MVC (model-view-controller) method, inside the folder '1_MVC' you will find 4 folders:
+
 _config: which contains the database information.
+
 _Model
+
 _View
+
 _Controller
+
 _And the "index.php" file which will route the URL to the appropriate controllers/actions.
+
+*About SQL part i tried to use oracle, so you can use sqldeveloper and use the file "Express_serv.sql".
+
+*You have to use a local server for the site to try it.
+
+*for example you can use Xampp and put the main folder 'EXPRESS SERVICES' in Xampp>htdocs folder and then you can try it and make your own changes.
